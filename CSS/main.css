@@ -21,6 +21,7 @@ body{
 }
 .header .header__img{
     width: 200px;
+    
 }
 .header__menu--profile{
     display: flex;
