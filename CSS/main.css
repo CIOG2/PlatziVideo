@@ -98,17 +98,23 @@ body{
     display: none;
 }
 
-
+.main__section--title{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    height: 20px;
+}
+.main__section--title h2{
+    position: absolute;
+    color: white;
+    font-size: 2.3rem;
+    margin: 10px 0 0 10px;
+ }
 .main__section-carrucel{
     position: relative;
     width: 100%;
     padding: 30px;
     overflow: scroll;
-}
-.main__section-carrucel h2{
-    color: white;
-    font-size: 2.3rem;
-    margin: 0px 0px 10px 5px;
 }
 
 .section__carrucel-container{
