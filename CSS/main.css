@@ -102,7 +102,7 @@ body{
     position: relative;
     width: 100%;
     text-align: left;
-    height: 20px;
+    height: 45px;
 }
 .main__section--title h2{
     position: absolute;
@@ -181,4 +181,10 @@ body{
     font-size: 1.3rem;
     margin-left: 20px;
     color: white;
+}
+
+@media(min-width: 610px){
+    .main__section--title{
+        height: 20px;
+    }
 }
