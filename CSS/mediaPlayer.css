@@ -31,48 +31,25 @@ body {
   
   .container {
     max-width: 960px;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
   }
   
   .movie {
     width: 100%;
   }
-  
-  .ads {
-    padding: 4px;
-    padding-right: 8px;
-    background: white;
-    width: 80%;
-  
+  .container:hover .playButton1{
+      display: flex;
+  }
+
+  .playButton1{
     position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .ads__link {
-    display: flex;
-    color: inherit;
-    text-decoration: inherit;
-  }
-  
-  .ads__img {
+    top: calc(50% - 60px);
+    left: calc(50% - 40px);
     width: 80px;
-    min-width: 80px;
     height: 80px;
-    margin-right: 16px;
-  }
-  
-  .ads__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .ads__title {
-    margin: 0;
-  }
-  .ads__body {
-    margin: 0;
+    border: none;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.74);
+    display: none;
   }
