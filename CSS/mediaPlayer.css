@@ -38,18 +38,4 @@ body {
   .movie {
     width: 100%;
   }
-  .container:hover .playButton1{
-      display: flex;
-  }
 
-  .playButton1{
-    position: absolute;
-    top: calc(50% - 60px);
-    left: calc(50% - 40px);
-    width: 80px;
-    height: 80px;
-    border: none;
-    border-radius: 50%;
-    background-color:rgba(255, 255, 255, 0.74);
-    display: none;
-  }
