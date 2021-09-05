@@ -1,34 +1,37 @@
-const video = document.querySelector("video");
-const button = document.querySelector("button");
-let pause = false;
+// ******************  Index.js
+
+// import MediaPlayer from './mediaPlayer.js';
+// import MediaPlayer from './plugins/AutoPlay.js';
+
+    const video = document.querySelector('video');
+    const player = new MediaPlayer({el: video, plugins: [],});
+
+    const button = document.querySelector('button')
+    button.onclick = () => player.togglePlay();
 
 
+// ******************
 
-function mediaPlayer(config) {
+function MediaPlayer(config) {
     this.media = config.el;
+    this.plugins = config.plugins || [];
 };
-mediaPlayer.prototype.play = function () {
+
+MediaPlayer.prototype.play = function () {
     this.media.play();
-}
-
-
-function mediaStop(config) {
-    this.media = config.el;
 };
 
-mediaStop.prototype.pause = function () {
+MediaPlayer.prototype.pause = function () {
     this.media.pause();
-}
+};
 
-const player = new mediaPlayer({ el: video});
-const stop = new mediaStop({ el: video});
-
-button.onclick = () => {
-    if (pause) {
-        pause = false;
-        stop.pause();
+MediaPlayer.prototype.togglePlay = function () {
+    if(this.media.paused){
+        this.play();
     } else {
-        pause = true;
-        player.play();
+        this.pause();
     }
-}
+};
+
+
+// export default MediaPlayer;
