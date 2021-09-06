@@ -28,6 +28,11 @@ MediaPlayer.prototype.togglePlay = function () {
 };
 
 
+MediaPlayer.prototype.toggleSound = function() {
+    this.media.muted = !this.media.muted
+};
+
+
 MediaPlayer.prototype.mute = function () {
     this.media.muted = true;
 }
